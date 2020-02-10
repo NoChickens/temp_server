@@ -11,7 +11,7 @@ import urllib.request
 
 def sending(request):
     # base64_result = request.data    지수형이 보내 줄 거 
-    with open('./maerong.json', 'r', encoding='utf-8') as f:
+    with open('./OCR.json', 'r', encoding='utf-8') as f:
         temps = json.load(f)
         # temps["images"][0]["data"] = base64_result
         transmit = json.dumps(temps)
