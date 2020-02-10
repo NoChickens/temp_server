@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 import json
 import urllib.request
+# from decouple import config
 
 
 # 1. 이미지 업로드 순간(나라 코드까지) - OCR로 보내주는 함수
@@ -16,7 +17,7 @@ def sending(request):
         # temps["images"][0]["data"] = base64_result
         transmit = json.dumps(temps)
     data = transmit
-    # url = ""
+    # url = "Invoke OCR URL"
     request = urllib.request.Request(url)
     request.add_header("X-OCR-SECRET","secret_key")
     request.add_header("Content-Type", "application/json")
@@ -24,7 +25,16 @@ def sending(request):
     rescode = response.getcode()
     if(rescode==200):
         response_body = response.read()
-        print(response_body.decode('utf-8'))
+        fix = response_body.decode('utf-8')
+        fix = json.loads(fix)
+        empty = ''
+        for key, val in fix.items():
+            if key == "images":
+                for k in val[0]["fields"]:
+                    empty+=k['inferText']+' '
+        print(empty)  # 여기에 inferText에 모든 것이 나옴.
+        
+        
     else:
         print("Error Code:" + rescode)
 
