@@ -3,13 +3,13 @@ from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Translate
-from .serializers import TranslateSerializer
-from rest_framework import viewsets 
+# from .models import Translate
+# from .serializers import TranslateSerializer
+# from rest_framework import viewsets 
 
-class TranslateViewSet(viewsets.ModelViewSet):
-    queryset = Translate.objects.all()
-    serializer_class = TranslateSerializer
+# class TranslateViewSet(viewsets.ModelViewSet):
+#     queryset = Translate.objects.all()
+#     serializer_class = TranslateSerializer
 
 # 1. 이미지 업로드 순간(나라 코드까지) - OCR로 보내주는 함수
 def sending(request):

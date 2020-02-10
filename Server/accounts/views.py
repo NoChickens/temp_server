@@ -8,6 +8,7 @@ from .serializers import UserSerializer, ScheduleSerializer, ExchangeRatesSerial
 
 
 # 1. 회원가입 - 회원가입 함수
+@api_view(['POST'])
 def signup(request):
     return 
 

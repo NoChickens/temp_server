@@ -4,28 +4,28 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'password', 'nickname')
 
 
-class ScheduleSerializer(serializers.ModelSerializer):
+class ScheduleSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Schedule
         fields = ('schedule_name',)
 
-class ReceiptSerializer(serializers.ModelSerializer):
+class ReceiptSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Receipt
         fields = ('total', 'date', 'place')
 
-class ExchangeRatesSerializer(serializers.ModelSerializer):
+class ExchangeRatesSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ExchangeRates
         fields = ('select_date',)
 
-class ExpenditureSerializer(serializers.ModelSerializer):
+class ExpenditureSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Expenditure
         fields = ('accumulate',)
