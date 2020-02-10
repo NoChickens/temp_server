@@ -16,7 +16,7 @@ def sending(request):
         # temps["images"][0]["data"] = base64_result
         transmit = json.dumps(temps)
     data = transmit
-    url = "https://4ezihkm520.apigw.ntruss.com/custom/v1/883/728a92f505e638bb89981222993c97d90c01ae012875a8a78af253cf003a56e4/general"
+    # url = ""
     request = urllib.request.Request(url)
     request.add_header("X-OCR-SECRET","secret_key")
     request.add_header("Content-Type", "application/json")
