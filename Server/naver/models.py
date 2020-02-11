@@ -16,6 +16,8 @@ from django.db import models
     
 #     translate = models.CharField(primary_key = True, max_length = 100, choices=country)
 
+class Temp(models.Model):
+    content = models.CharField(max_length=10000)
 
 
 

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-# from .models import Translate
+from .models import Temp
 
 
 # class TranslateSerializer(serializers.HyperlinkedModelSerializer):
@@ -7,3 +7,11 @@ from rest_framework import serializers
 #     class Meta:
 #         model = Translate
 #         fields = ('translate',)
+
+
+class TempSerializer(serializers.HyperlinkedModelSerializer):
+    content = serializers.CharField()
+
+    class Meta:
+        model = Temp
+        fields = ('content',)
