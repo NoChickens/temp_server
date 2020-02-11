@@ -3,12 +3,12 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    nickname = models.CharField(max_length=20)
+    pass
 
 
 class Schedule(models.Model):
     schedule_name = models.CharField(max_length=40)
-    # user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
 
 class Receipt(models.Model):

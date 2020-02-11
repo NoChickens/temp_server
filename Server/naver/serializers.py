@@ -9,7 +9,7 @@ from .models import Temp
 #         fields = ('translate',)
 
 
-class TempSerializer(serializers.HyperlinkedModelSerializer):
+class TempSerializer(serializers.ModelSerializer):
     content = serializers.CharField()
 
     class Meta:

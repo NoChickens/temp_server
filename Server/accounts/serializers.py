@@ -1,31 +1,54 @@
 from rest_framework import serializers
 from .models import User, Schedule, Receipt, ExchangeRates, Expenditure
 from django.contrib.auth import get_user_model
+from django.contrib.auth import authenticate
 
 User = get_user_model()
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserCreationSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'password', 'nickname')
+        fields = ('id', 'username', 'password',)
+
+class LoginUserSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    password = serializers.CharField()
+
+    def validate(self, data):
+        user = authenticate(**data)
+        if user and user.is_active:
+            return user
+        raise serializers.ValidationError("Unable to log in with provided credentials.")
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ("id", "username")
 
 
-class ScheduleSerializer(serializers.HyperlinkedModelSerializer):
+
+class ScheduleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Schedule
-        fields = ('schedule_name',)
+        fields = ('id', 'schedule_name',)
 
-class ReceiptSerializer(serializers.HyperlinkedModelSerializer):
+class UserstatusSerializer(serializers.ModelSerializer):
+    schedules = ScheduleSerializer(many=True)
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'schedules',)
+
+class ReceiptSerializer(serializers.ModelSerializer):
     class Meta:
         model = Receipt
-        fields = ('total', 'date', 'place')
+        fields = ('id', 'total', 'date', 'place')
 
-class ExchangeRatesSerializer(serializers.HyperlinkedModelSerializer):
+class ExchangeRatesSerializer(serializers.ModelSerializer):
     class Meta:
         model = ExchangeRates
-        fields = ('select_date',)
+        fields = ('id', 'select_date',)
 
-class ExpenditureSerializer(serializers.HyperlinkedModelSerializer):
+class ExpenditureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Expenditure
-        fields = ('accumulate',)
+        fields = ('id', 'accumulate',)
