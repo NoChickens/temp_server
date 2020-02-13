@@ -1,0 +1,93 @@
+{
+    "matchedTemplate": {
+        "id": 1113,
+        "name": "Blue_Bottle_Coffee"
+    },
+    "title": "BlueBottleCoffee",
+    "fields": [
+        {
+            "name": "product_1",
+            "bounding": {
+                "top": 473.27588,
+                "left": 209.48276,
+                "width": 133.83621,
+                "height": 27.155151
+            },
+            "valueType": "ALL",
+            "inferText": "IcedLatte",
+            "inferConfidence": 0.9888356
+        },
+        {
+            "name": "price_1",
+            "bounding": {
+                "top": 467.4569,
+                "left": 651.7241,
+                "width": 69.82764,
+                "height": 25.215515
+            },
+            "valueType": "ALL",
+            "inferText": "$5.00",
+            "inferConfidence": 0.99652004
+        },
+        {
+            "name": "product_2",
+            "bounding": {
+                "top": 552.80176,
+                "left": 213.36208,
+                "width": 69.82759,
+                "height": 25.215515
+            },
+            "valueType": "ALL",
+            "inferText": "Latte",
+            "inferConfidence": 0.99974805
+        },
+        {
+            "name": "price_2",
+            "bounding": {
+                "top": 543.10345,
+                "left": 655.60345,
+                "width": 71.76721,
+                "height": 27.155151
+            },
+            "valueType": "ALL",
+            "inferText": "$5.00",
+            "inferConfidence": 0.99723685
+        },
+        {
+            "name": "date",
+            "bounding": {
+                "top": 107.13276,
+                "left": 498.4914,
+                "width": 187.47339,
+                "height": 49.979317
+            },
+            "valueType": "ALL",
+            "inferText": "January222019\n4:23PM",
+            "inferConfidence": 0.99870205
+        },
+        {
+            "name": "address",
+            "bounding": {
+                "top": 110.56035,
+                "left": 221.1207,
+                "width": 205.60345,
+                "height": 75.646545
+            },
+            "valueType": "ALL",
+            "inferText": "66MintSt\nSanFrancisco,CA\n94103",
+            "inferConfidence": 0.99222356
+        },
+        {
+            "name": "Total",
+            "bounding": {
+                "top": 742.88794,
+                "left": 628.4483,
+                "width": 102.8017,
+                "height": 32.97412
+            },
+            "valueType": "ALL",
+            "inferText": "$10.40",
+            "inferConfidence": 0.99734205
+        }
+    ]
+}

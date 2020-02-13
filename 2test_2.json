@@ -1,0 +1,93 @@
+{
+    "matchedTemplate": {
+        "id": 1113,
+        "name": "Blue_Bottle_Coffee"
+    },
+    "title": "",
+    "fields": [
+        {
+            "name": "product_1",
+            "bounding": {
+                "top": 468.0,
+                "left": 209.0,
+                "width": 136.0,
+                "height": 38.0
+            },
+            "valueType": "ALL",
+            "inferText": "",
+            "inferConfidence": 0.0
+        },
+        {
+            "name": "price_1",
+            "bounding": {
+                "top": 466.0,
+                "left": 646.0,
+                "width": 84.0,
+                "height": 35.0
+            },
+            "valueType": "ALL",
+            "inferText": "",
+            "inferConfidence": 0.0
+        },
+        {
+            "name": "product_2",
+            "bounding": {
+                "top": 551.0,
+                "left": 209.0,
+                "width": 81.0,
+                "height": 36.0
+            },
+            "valueType": "ALL",
+            "inferText": "",
+            "inferConfidence": 0.0
+        },
+        {
+            "name": "price_2",
+            "bounding": {
+                "top": 540.0,
+                "left": 649.0,
+                "width": 83.0,
+                "height": 34.0
+            },
+            "valueType": "ALL",
+            "inferText": "",
+            "inferConfidence": 0.0
+        },
+        {
+            "name": "date",
+            "bounding": {
+                "top": 140.58377,
+                "left": 679.15826,
+                "width": 249.4867,
+                "height": 75.24202
+            },
+            "valueType": "ALL",
+            "inferText": "September23,2018\n9: 51 AM",
+            "inferConfidence": 0.9990781
+        },
+        {
+            "name": "address",
+            "bounding": {
+                "top": 84.38825,
+                "left": 123.33641,
+                "width": 232.09566,
+                "height": 61.66366
+            },
+            "valueType": "ALL",
+            "inferText": "Hogwart",
+            "inferConfidence": 0.9987554
+        },
+        {
+            "name": "Total",
+            "bounding": {
+                "top": 735.0,
+                "left": 628.0,
+                "width": 107.0,
+                "height": 45.0
+            },
+            "valueType": "ALL",
+            "inferText": "",
+            "inferConfidence": 0.0
+        }
+    ]
+}
