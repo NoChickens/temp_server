@@ -20,7 +20,7 @@ ipython-genutils==0.2.0
 isort==4.3.21
 itypes==1.1.0
 jedi==0.16.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
@@ -68,7 +68,7 @@ ipython-genutils==0.2.0
 isort==4.3.21
 itypes==1.1.0
 jedi==0.16.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
@@ -115,7 +115,7 @@ ipython-genutils==0.2.0
 isort==4.3.21
 itypes==1.1.0
 jedi==0.16.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
