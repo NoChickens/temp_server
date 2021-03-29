@@ -29,7 +29,7 @@ parso==0.6.1
 pickleshare==0.7.5
 Pillow==7.0.0
 prompt-toolkit==3.0.3
-Pygments==2.5.2
+Pygments==2.7.4
 pylint==2.4.4
 pyparsing==2.4.6
 python-decouple==3.3
@@ -77,7 +77,7 @@ parso==0.6.1
 pickleshare==0.7.5
 Pillow==7.0.0
 prompt-toolkit==3.0.3
-Pygments==2.5.2
+Pygments==2.7.4
 pylint==2.4.4
 pyparsing==2.4.6
 pytz==2019.3
@@ -124,7 +124,7 @@ parso==0.6.1
 pickleshare==0.7.5
 Pillow==7.0.0
 prompt-toolkit==3.0.3
-Pygments==2.5.2
+Pygments==2.7.4
 pylint==2.4.4
 pyparsing==2.4.6
 python-decouple==3.3
